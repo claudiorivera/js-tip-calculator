@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Tip Calculator</title>
+    <title>JavaScript Tip Calculator</title>
   </head>
   <body>
-    <h1>Welcome to the Tip Calculator</h1>
+    <h1>Welcome to the JavaScript Tip Calculator</h1>
+    <h2>By: Claudio Rivera</h2>
+    <h3>(This is an educational project, created to learn HTML/CSS/JS)</h3>
     <!-- Input Form -->
-    <form>
-      <!-- Sub Total Label and Text Input Box -->
-      <label for="subTotal">Sub Total</label>
-      <input type="text" name="subTotal" id="subTotal" value="0.00"><br>
-      <!-- Tip Amount Dropdown Menu -->
-      <label for="tipAmount">Select Tip Amount</label>
-      
-
-      <!-- Submit Button -->
-    </form>
+    <div class="inputForm">
+      <form>
+        <!-- Sub Total Label and Text Input Box -->
+        <label for="subTotal">Sub Total: </label>
+        <input type="text" name="subTotal" id="subTotal" value="0.00" /><br />
+        <!-- Tip Amount Dropdown Menu -->
+        <label for="tipAmount">Select Tip Amount: </label>
+        <select name="tipAmount" id="tipAmount">
+          <option value="twentyPercent">20%</option>
+          <option value="fifteenPercent">15%</option>
+          <option value="tenPercent">10%</option> </select
+        ><br />
+        <!-- Submit Button -->
+        <button>Calculate</button>
+      </form>
+    </div>
+    <!-- Calculated Amount -->
+    <div class="totalAmount">Total:</div>
   </body>
 </html>

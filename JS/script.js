@@ -1,10 +1,11 @@
 const SUBTOTAL = document.querySelector("#subTotal");
 const TIP = document.querySelector("#tipAmount");
 const SUBMIT = document.querySelector("#calculate");
+const TOTAL = document.querySelector(".totalAmount");
 
 // Variables
-const tipRate = TIP.value;
-var subTotal = parseFloat(SUBTOTAL.value);
+let tipRate = TIP.value;
+let subTotal = parseFloat(SUBTOTAL.value);
 
 // Function that returns the result of multiplying
 // a sub total and a tax rate, in cents with 2 decimal places
@@ -20,13 +21,11 @@ function calculateTotalAmount(subTotal, tipAmount) {
   return (subTotal + tipAmount).toFixed(2);
 }
 
-// Testing functions with console log
-console.log(
-  "The total on a check of $" +
-    subTotal +
-    " with a " +
-    tipRate +
-    "% tip is $" +
-    calculateTotalAmount(subTotal, tipAmount) +
-    "."
-);
+// Function that displays the total
+function displayTotal(e) {
+  e.preventDefault();
+  TOTAL.outerText += " $" + calculateTotalAmount(subTotal, tipAmount);
+}
+
+// Event listeners and handlers go here
+SUBMIT.onclick = displayTotal;

@@ -1,16 +1,15 @@
-const SUBTOTAL = document.querySelector("#subTotal");
-const TIP = document.querySelector("#tipAmount");
-const SUBMIT = document.querySelector("#calculate");
-const TOTAL = document.querySelector(".totalAmount");
+const SUBTOTAL = document.querySelector("input[name='subTotal']");
+const TIP = document.querySelector("select[name='tipAmount']");
+const SUBMIT = document.querySelector("button");
 
-// Variables
-let tipRate = TIP.value;
+// Variables - Converted to Ints and Floats
+let tipRate = parseInt(TIP.value);
 let subTotal = parseFloat(SUBTOTAL.value);
 
 // Function that returns the result of multiplying
 // a sub total and a tax rate
 function calculateTipAmount(subTotal, tipRate) {
-  return Math.round((subTotal * 100 * tipRate) / 1000) / 100;
+  return Math.round((subTotal * tipRate) / 10) / 100;
 }
 
 let tipAmount = calculateTipAmount(subTotal, tipRate);
@@ -19,17 +18,18 @@ let tipAmount = calculateTipAmount(subTotal, tipRate);
 // the sub total and the tax amount, in dollars and cents
 // to 2 decimal places
 function calculateTotalAmount(subTotal, tipAmount) {
-  return (subTotal + tipAmount).toFixed(2);
+  return subTotal + tipAmount;
 }
 
 // Function that displays the total
 function displayTotal(e) {
   e.preventDefault();
-  TOTAL.outerText += " $" + calculateTotalAmount(subTotal, tipAmount);
+  // TOTAL.outerText += " $" + calculateTotalAmount(subTotal, tipAmount);
+  console.log(calculateTotalAmount(subTotal, tipAmount));
 }
 
-// Event handler
+// Event handlers
 SUBMIT.onclick = displayTotal;
 
-// TODO: Calculate button only works with starting values.
-// It should work with the currently displayed values.
+// TODO: Calculate button only works with starting values from HTML.
+// It should work with inputted values

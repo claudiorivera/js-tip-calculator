@@ -10,8 +10,8 @@
       <h1>JavaScript Tip Calculator</h1>
     </header>
     <main>
-      <!-- Input Form -->
-      <div class="inputForm">
+      <!-- Input Form Area -->
+      <div class="inputFormArea">
         <form>
           <!-- Sub Total Label and Text Input Box -->
           <label for="subTotal">Sub Total: </label>
@@ -19,7 +19,7 @@
             type="text"
             name="subTotal"
             id="subTotal"
-            value="12.34"
+            value="10.00"
           /><br />
           <!-- Tip Amount Dropdown Menu -->
           <label for="tipAmount">Select Tip Amount: </label>
@@ -29,14 +29,18 @@
             <option value="10">10%</option> </select
           ><br />
           <!-- Submit Button -->
-          <button id="calculate">Calculate</button>
+          <button id="calculateTotalAmount">Calculate</button>
         </form>
       </div>
-      <!-- Calculated Amount -->
-      <div class="totalAmount">Total:</div>
+      <!-- Display Area - Starts Hidden -->
+      <div class="displayArea">
+        <!-- Calculated Amount -->
+        <div class="totalAmountLabel">Total:</div>
+        <div class="totalAmountResult">$0.00</div>
+      </div>
     </main>
     <footer>
-      <h5>Made from scratch by Claudio Rivera.</h5>
+      <h5>Made from scratch by Claudio Rivera in 2020.</h5>
     </footer>
   </body>
 </html>

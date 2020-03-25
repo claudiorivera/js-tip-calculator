@@ -6,6 +6,11 @@ footer {
   background-color: grey;
 }
 
-.inputForm {
+.inputFormArea {
   background-color: lightgoldenrodyellow;
+}
+
+.displayArea {
+  /* Starts hidden */
+  display: none;
 }

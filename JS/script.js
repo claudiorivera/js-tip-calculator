@@ -1,6 +1,8 @@
 const SUBTOTAL = document.querySelector("input[name='subTotal']");
 const TIP = document.querySelector("select[name='tipAmount']");
 const CALCULATE = document.querySelector("button[name='calculateTotalAmount']");
+const DISPLAY = document.querySelector(".displayArea");
+const TOTAL = document.querySelector(".totalAmountResult");
 
 // Variables - Converted to Ints and Floats
 let tipRate = parseInt(TIP.value);
@@ -20,24 +22,25 @@ function calculateTotalAmount() {
   return subTotal + tipAmount;
 }
 
-// Displays the total - Console log for now
+// Displays the total
 function displayTotal() {
-  console.log(calculateTotalAmount());
+  // Unhide the results display...
+  DISPLAY.style.display = "block";
+  // ...and update the amount
+  TOTAL.textContent = `$${calculateTotalAmount().toFixed(2)}`;
 }
 
 // Event handlers
 
-// When the Calculate button is clicked, display the total
+// When the Calculate button is clicked, call the displayTotal function
 CALCULATE.onclick = displayTotal;
 
 // When the Tip Amount is changed, update tipRate
 TIP.addEventListener("change", event => {
   tipRate = parseInt(TIP.value);
-  console.log(`The tip rate is now ${tipRate}%.`);
 });
 
 // When the Sub Total is changed, update subTotal
-SUBTOTAL.addEventListener("change", event => {
+SUBTOTAL.addEventListener("input", event => {
   subTotal = parseFloat(SUBTOTAL.value);
-  console.log(`The sub total is now $${subTotal}.`);
 });

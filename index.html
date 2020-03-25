@@ -12,25 +12,18 @@
     <main>
       <!-- Input Form Area -->
       <div class="inputFormArea">
-        <form>
-          <!-- Sub Total Label and Text Input Box -->
-          <label for="subTotal">Sub Total: </label>
-          <input
-            type="text"
-            name="subTotal"
-            id="subTotal"
-            value="10.00"
-          /><br />
-          <!-- Tip Amount Dropdown Menu -->
-          <label for="tipAmount">Select Tip Amount: </label>
-          <select name="tipAmount" id="tipAmount">
-            <option value="20">20%</option>
-            <option value="15">15%</option>
-            <option value="10">10%</option> </select
-          ><br />
-          <!-- Submit Button -->
-          <button id="calculateTotalAmount">Calculate</button>
-        </form>
+        <!-- Sub Total Label and Text Input Box -->
+        <label for="subTotal">Sub Total: </label>
+        <input type="text" name="subTotal" value="10.00" /><br />
+        <!-- Tip Amount Dropdown Menu -->
+        <label for="tipAmount">Select Tip Amount: </label>
+        <select name="tipAmount">
+          <option value="20">20%</option>
+          <option value="15">15%</option>
+          <option value="10">10%</option> </select
+        ><br />
+        <!-- Submit Button -->
+        <button name="calculateTotalAmount">Calculate</button>
       </div>
       <!-- Display Area - Starts Hidden -->
       <div class="displayArea">

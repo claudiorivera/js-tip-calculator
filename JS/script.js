@@ -11,7 +11,7 @@ let subTotal = parseFloat(SUBTOTAL.value);
 // Function that returns the result of multiplying
 // a sub total and a tax rate
 function calculateTipAmount() {
-  return Math.round((subTotal * tipRate) / 10) / 100;
+  return Math.round(subTotal * tipRate) / 100;
 }
 
 // Function that stores the result of adding

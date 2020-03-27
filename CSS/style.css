@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-body {
-  background: rgb(241, 241, 241);
-}
-
 header,
 footer,
 h1 {
@@ -15,7 +11,7 @@ h1 {
 }
 
 h1 {
-  text-shadow: 5px 5px 5px rgba(133, 133, 133, 0.507);
+  text-shadow: 3px 3px 5px rgba(131, 131, 131, 0.288);
   font-size: 3em;
 }
 
@@ -25,23 +21,34 @@ h1 {
   text-align: center;
   position: absolute;
   left: 50%;
-  top: 30%;
+  top: 40%;
   transform: translate(-50%, -50%);
+  border-radius: 20px;
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  box-shadow: 50px 50px 100px #d9d9d9, -50px -50px 100px #ffffff;
 }
+
 .jsTipCalculatorUserInput {
   margin: 10px;
 }
 
 button {
-  background: rgb(241, 241, 241);
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
   border: none;
   margin: 20px auto;
   padding: 10px;
   border-radius: 5px;
-  box-shadow: -3px -3px 7px rgba(255, 255, 255, 0.918),
-    3px 3px 5px rgba(131, 131, 131, 0.288);
+  box-shadow: 5px 5px 10px #d9d9d9, -5px -5px 10px #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+}
+
+button:active {
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.02);
 }
 
 .totalAmountDisplayArea {
   display: none;
+  margin: 20px auto;
 }

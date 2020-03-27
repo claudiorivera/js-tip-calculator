@@ -1,7 +1,7 @@
 const SUBTOTAL = document.querySelector("input[name='subTotal']");
 const TIP = document.querySelector("select[name='tipAmount']");
 const CALCULATE = document.querySelector("button[name='calculateTotalAmount']");
-const DISPLAY = document.querySelector(".displayArea");
+const DISPLAY = document.querySelector(".totalAmountDisplayArea");
 const TOTAL = document.querySelector(".totalAmountResult");
 
 // Function that returns the tip amount,

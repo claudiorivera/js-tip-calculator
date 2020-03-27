@@ -5,7 +5,7 @@
     <script src="JS/script.js" defer></script>
     <link rel="stylesheet" href="CSS/style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&family=Oswald:wght@300&family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -14,23 +14,29 @@
       <h1>JavaScript Tip Calculator</h1>
     </header>
     <main>
-      <!-- Input Form Area -->
-      <div class="inputFormArea">
+      <!-- Input Form -->
+      <div class="inputFormDisplayArea">
         <!-- Sub Total Label and Text Input Box -->
-        <label for="subTotal">Sub Total: </label>
-        <input type="text" name="subTotal" value="10.00" /><br />
+        <div class="subTotalDisplay">
+          <label for="subTotal">Sub Total: </label>
+          <input type="text" name="subTotal" value="10.00" />
+        </div>
         <!-- Tip Amount Dropdown Menu -->
-        <label for="tipAmount">Select Tip Amount: </label>
-        <select name="tipAmount">
-          <option value="20">20%</option>
-          <option value="15">15%</option>
-          <option value="10">10%</option> </select
-        ><br />
+        <div class="tipAmountDisplay">
+          <label for="tipAmount">Select Tip Amount: </label>
+          <select name="tipAmount">
+            <option value="20">20%</option>
+            <option value="15">15%</option>
+            <option value="10">10%</option>
+          </select>
+        </div>
         <!-- Submit Button -->
-        <button name="calculateTotalAmount">Calculate</button>
+        <div class="buttonDisplay">
+          <button name="calculateTotalAmount">Calculate</button>
+        </div>
       </div>
-      <!-- Display Area - Starts Hidden -->
-      <div class="displayArea">
+      <!-- Total Amount Display - Starts Hidden -->
+      <div class="totalAmountDisplayArea">
         <!-- Calculated Amount -->
         <div class="totalAmountLabel">Total:</div>
         <div class="totalAmountResult"></div>

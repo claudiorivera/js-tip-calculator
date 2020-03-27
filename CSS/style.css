@@ -1,17 +1,44 @@
-body {
-  text-align: center;
-  margin: auto;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
 }
-header,
-footer {
-  background-color: grey;
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background: rgb(218, 218, 218);
+  flex-direction: column;
+}
+
+main {
+  margin: 10px;
+}
+
+header {
+  margin: 10px;
 }
 
 .inputFormArea {
-  background-color: lightgoldenrodyellow;
+  margin: 10px;
+}
+
+button {
+  background: rgb(218, 218, 218);
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 
 .displayArea {
-  /* Starts hidden */
   display: none;
+  margin: 10px;
+}
+
+footer {
+  margin: 10px;
 }

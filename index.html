@@ -10,40 +10,44 @@
     />
   </head>
   <body>
-    <header>
-      <h1>JavaScript Tip Calculator</h1>
-    </header>
     <main>
-      <!-- Input Form -->
-      <div class="inputFormDisplayArea">
-        <!-- Sub Total Label and Text Input Box -->
-        <div class="subTotalDisplay">
-          <label for="subTotal">Sub Total: </label>
-          <input type="text" name="subTotal" value="10.00" />
+      <div class="jsTipCalculatorContent">
+        <header>
+          <h1>JavaScript Tip Calculator</h1>
+        </header>
+
+        <div class="jsTipCalculatorUserInput">
+          <div class="inputFormDisplayArea">
+            <div class="subTotalDisplay">
+              <label for="subTotal">Sub Total: </label>
+              <input type="text" name="subTotal" value="10.00" />
+            </div>
+            <div class="tipAmountDisplay">
+              <label for="tipAmount">Select Tip Amount: </label>
+              <select name="tipAmount">
+                <option value="20">20%</option>
+                <option value="15">15%</option>
+                <option value="10">10%</option>
+              </select>
+            </div>
+            <div class="buttonDisplay">
+              <button name="calculateTotalAmount">Calculate</button>
+            </div>
+          </div>
+          <div class="totalAmountDisplayArea">
+            <!-- Calculated Amount -->
+            <div class="totalAmountLabel">Total:</div>
+            <div class="totalAmountResult"></div>
+          </div>
         </div>
-        <!-- Tip Amount Dropdown Menu -->
-        <div class="tipAmountDisplay">
-          <label for="tipAmount">Select Tip Amount: </label>
-          <select name="tipAmount">
-            <option value="20">20%</option>
-            <option value="15">15%</option>
-            <option value="10">10%</option>
-          </select>
-        </div>
-        <!-- Submit Button -->
-        <div class="buttonDisplay">
-          <button name="calculateTotalAmount">Calculate</button>
-        </div>
-      </div>
-      <!-- Total Amount Display - Starts Hidden -->
-      <div class="totalAmountDisplayArea">
-        <!-- Calculated Amount -->
-        <div class="totalAmountLabel">Total:</div>
-        <div class="totalAmountResult"></div>
+
+        <footer>
+          <h6>
+            Made from scratch by Claudio Rivera during the COVID-19 epidemic in
+            2020.
+          </h6>
+        </footer>
       </div>
     </main>
-    <footer>
-      <h5>Made from scratch by Claudio Rivera in 2020.</h5>
-    </footer>
   </body>
 </html>

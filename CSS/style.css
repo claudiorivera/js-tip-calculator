@@ -17,7 +17,7 @@ h1 {
 
 .jsTipCalculatorContent {
   padding: 40px;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Varela Round", sans-serif;
   text-align: center;
   position: absolute;
   left: 50%;
@@ -28,6 +28,7 @@ h1 {
   box-shadow: 50px 50px 100px #d9d9d9, -50px -50px 100px #ffffff;
   display: flex;
   flex-direction: column;
+  margin: 40px;
 }
 
 .jsTipCalculatorUserInput {

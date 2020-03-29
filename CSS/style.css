@@ -1,66 +1,67 @@
 * {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 header,
-footer,
-h1 {
+footer {
   font-family: "Bebas Neue", cursive;
-  text-align: center;
+  padding: 20px;
 }
 
 h1 {
   text-shadow: 3px 3px 5px rgba(131, 131, 131, 0.288);
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
-.jsTipCalculatorContent {
-  padding: 40px;
-  font-family: "Varela Round", sans-serif;
-  text-align: center;
-  position: absolute;
-  left: 50%;
-  top: 40%;
-  transform: translate(-50%, -50%);
+.jsTipCalculatorCard {
+  margin: 10% 20%;
   border-radius: 20px;
   background: linear-gradient(145deg, #e6e6e6, #ffffff);
   box-shadow: 50px 50px 100px #d9d9d9, -50px -50px 100px #ffffff;
-  display: flex;
-  flex-direction: column;
-  margin: 40px;
 }
 
-.jsTipCalculatorUserInput {
-  margin: 10px;
+.mainDisplayArea {
+  padding: 0 20px;
+  font-family: "Varela Round", sans-serif;
 }
+.inputFormDisplayArea {
+  padding: 0 20px;
+}
+
 .subTotalDisplay,
 .tipAmountDisplay {
-  margin: 10px;
+  padding: 10px 10px;
+  display: grid;
+  grid-auto-flow: column;
 }
+.buttonDisplay {
+  padding: 10px 10px;
+}
+
+.totalAmountDisplayArea {
+  display: none;
+  padding: 10px;
+}
+
 input {
   border: none;
   text-align: right;
-  background: linear-gradient(145deg, #e6e6e6, #ffffff);
-  box-shadow: inset 50px 50px 100px #d9d9d9, inset -50px -50px 100px #ffffff;
 }
+
 button {
   background: linear-gradient(145deg, #e6e6e6, #ffffff);
   border: none;
-  margin: 20px auto;
   padding: 10px;
   border-radius: 5px;
   box-shadow: 5px 5px 10px #d9d9d9, -5px -5px 10px #ffffff;
   text-transform: uppercase;
   cursor: pointer;
   outline: none;
+  font-size: 1.2em;
 }
 
 button:active {
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.02);
-}
-
-.totalAmountDisplayArea {
-  display: none;
-  margin: 20px auto;
 }

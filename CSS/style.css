@@ -24,7 +24,7 @@ h1 {
 
 .mainDisplayArea {
   padding: 0 20px;
-  font-family: "Varela Round", sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
 }
 .inputFormDisplayArea {
   padding: 0 20px;
@@ -63,6 +63,7 @@ button {
   cursor: pointer;
   outline: none;
   font-size: 1.2em;
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 button:active {

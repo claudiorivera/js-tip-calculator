@@ -1,33 +1,34 @@
-* {
-  margin: 0;
-  padding: 0;
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
   text-align: center;
 }
 
-header,
-footer {
-  font-family: "Bebas Neue", cursive;
-  padding: 20px;
+header {
+  padding: 20px 20px 0px 20px;
+  text-shadow: 3px 3px 5px rgba(131, 131, 131, 0.288);
+  font-size: 1.5em;
 }
 
-h1 {
-  text-shadow: 3px 3px 5px rgba(131, 131, 131, 0.288);
-  font-size: 2.5em;
+footer {
+  padding: 0px 20px 20px 20px;
+}
+
+.fontHeaderFooter {
+  font-family: "Bebas Neue", cursive;
+}
+
+.fontMain {
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 .jsTipCalculatorCard {
-  margin: 10% 20%;
-  border-radius: 20px;
-  background: linear-gradient(145deg, #e6e6e6, #ffffff);
-  box-shadow: 50px 50px 100px #d9d9d9, -50px -50px 100px #ffffff;
-}
-
-.mainDisplayArea {
-  padding: 0 20px;
-  font-family: "Barlow Condensed", sans-serif;
-}
-.inputFormDisplayArea {
-  padding: 0 20px;
+  padding: 1vh 30vh;
 }
 
 .subTotalDisplay,
@@ -35,6 +36,7 @@ h1 {
   padding: 10px 10px;
   display: flex;
   justify-content: space-between;
+  font-size: 1.5em;
 }
 
 .buttonDisplay {
@@ -44,6 +46,7 @@ h1 {
 .totalAmountDisplayArea {
   display: none;
   padding: 10px;
+  font-size: 1.5em;
 }
 
 input {
@@ -52,18 +55,15 @@ input {
 }
 
 button {
-  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  background: rgb(196, 33, 33);
+  color: white;
   border: none;
   padding: 10px;
   border-radius: 5px;
-  box-shadow: 5px 5px 10px #d9d9d9, -5px -5px 10px #ffffff;
   text-transform: uppercase;
   cursor: pointer;
   outline: none;
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-family: "Barlow Condensed", sans-serif;
-}
-
-button:active {
-  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.02);
+  font-weight: bold;
 }

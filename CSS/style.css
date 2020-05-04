@@ -27,8 +27,8 @@ footer {
   font-family: "Barlow Condensed", sans-serif;
 }
 
-.jsTipCalculatorCard {
-  padding: 1vh 30vh;
+.jsTipCalculator {
+  padding: 5% 15%;
 }
 
 .subTotalDisplay,
